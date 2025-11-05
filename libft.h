@@ -6,11 +6,11 @@
 /*   By: dbobrov <dbobrov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 09:14:21 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/05 09:17:20 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/05 14:53:56 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
+# ifndef LIBFT_H
 # define LIBFT_H
 
 # include <stddef.h>
@@ -72,4 +72,4 @@ void	*ft_calloc(size_t count, size_t size);
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
 
-#endif
+# endif
