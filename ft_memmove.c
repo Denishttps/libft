@@ -1,0 +1,39 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dbobrov <dbobrov@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/05 14:28:07 by dbobrov           #+#    #+#             */
+/*   Updated: 2025/11/05 14:59:14 by dbobrov          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	*ft_memmove(void *dst, const void *src, size_t len)
+{
+    unsigned char *d;
+    const unsigned char *s;
+
+    if (dst == src || len == 0)
+        return (dst);
+    s = (const unsigned char *)src;    
+    d = (unsigned char *)dst;
+    if (d < s)
+    {
+        while (len--)
+        {
+            *d++ = *s++;
+        }
+    }
+    else
+    {
+        d += len;
+        s += len;
+        while (len--)
+        *(d--) = *(s--);
+    }
+    return (dst);
+}
