@@ -1,31 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/08 13:22:16 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/08 13:22:16 by dbobrov          ###   ########.fr       */
+/*   Created: 2025/11/08 14:45:49 by dbobrov           #+#    #+#             */
+/*   Updated: 2025/11/08 14:45:49 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-	const unsigned char	*p1;
-	const unsigned char	*p2;
+	char	*substr;
+	size_t	sub_len;
+	size_t	len_s;
+	size_t	i;
 
-	p1 = (const unsigned char *)s1;
-	p2 = (const unsigned char *)s2;
-	while (n > 0)
+	len_s = ft_strlen(s);
+	sub_len = len_s - start;
+	if (len_s <= start)
+		return (ft_strdup(""));
+	if (sub_len > len)
+		sub_len = len;
+	substr = (char *)malloc(sub_len + 1);
+	if (!substr)
+		return (NULL);
+	i = 0;
+	while (i < sub_len)
 	{
-		if (*p1 != *p2)
-			return (*p1 - *p2);
-		p1++;
-		p2++;
-		n--;
+		substr[i] = s[start + i];
+		i++;	
 	}
-	return (0);
+	substr[i] = '\0';
+	return (substr);
 }

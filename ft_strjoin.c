@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/08 13:22:16 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/08 13:22:16 by dbobrov          ###   ########.fr       */
+/*   Created: 2025/11/08 15:44:16 by dbobrov           #+#    #+#             */
+/*   Updated: 2025/11/08 15:44:16 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	const unsigned char	*p1;
-	const unsigned char	*p2;
+	char	*new_str;
+	size_t	len1;
+	size_t	len2;
 
-	p1 = (const unsigned char *)s1;
-	p2 = (const unsigned char *)s2;
-	while (n > 0)
-	{
-		if (*p1 != *p2)
-			return (*p1 - *p2);
-		p1++;
-		p2++;
-		n--;
-	}
-	return (0);
+	if (!s1 || !s2)
+		return (NULL);
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	new_str = (char *)malloc((len1 + len2 + 1) * sizeof(char));
+	if (!new_str)
+		return (NULL);
+	ft_memcpy(new_str, s1, len1);
+	ft_memcpy(new_str + len1, s2, len2);
+	new_str[len1 + len2] = '\0';
+	return (new_str);
 }
