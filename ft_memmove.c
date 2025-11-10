@@ -6,7 +6,7 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 14:28:07 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/08 13:23:11 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/10 16:11:23 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
         d += len;
         s += len;
         while (len--)
-        *(d--) = *(s--);
+        	*(d--) = *(s--);
     }
     return (dst);
 }

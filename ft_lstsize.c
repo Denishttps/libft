@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 13:24:53 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/10 13:32:19 by dbobrov          ###   ########.fr       */
+/*   Created: 2025/11/10 16:22:00 by dbobrov           #+#    #+#             */
+/*   Updated: 2025/11/10 16:27:08 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isascii(int c)
+int	ft_lstsize(t_list *lst)
 {
-	return (c >= 0 && c < 128);
+	int	i;
+	
+	i = 0;
+	while (lst)
+		lst = lst->next;
+		i++;
+	return i;
 }
