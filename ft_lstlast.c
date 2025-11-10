@@ -6,7 +6,7 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:25:01 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/10 16:25:30 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/10 16:48:07 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 t_list *ft_lstlast(t_list *lst)
 {
+	if (!lst)
+		return NULL;
 	while (lst->next)
 		lst = lst->next;
 	return lst;

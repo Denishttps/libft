@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 14:16:38 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/10 16:48:00 by dbobrov          ###   ########.fr       */
+/*   Created: 2025/11/10 16:59:22 by dbobrov           #+#    #+#             */
+/*   Updated: 2025/11/10 16:59:33 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+t_list *ft_lstmap(t_list *lst, void *(*f) (void *), void (*del) (void *))
 {
-	t_list	*s1;
-
-	s1 = (t_list *)malloc(sizeof(t_list));
-	if (!s1)
-		return (NULL);
-	s1->content = content;
-	s1->next = NULL;
-	return (s1);
+	
 }

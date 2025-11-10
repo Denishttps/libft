@@ -6,7 +6,7 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 14:19:45 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/10 16:19:58 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/10 16:48:54 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 void ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (!*lst || !new)
+		return ;
 	new->next = *lst;
 	*lst = new;
 }
