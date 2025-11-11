@@ -1,0 +1,5 @@
+l-venv
+libft.a
+*.o
+obj/
+*.d

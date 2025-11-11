@@ -33,6 +33,19 @@ static size_t	count_words(const char *s, char c)
 	return (count);
 }
 
+static void	free_all(char **arr, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		free(arr[i]);
+		i++;
+	}
+	free(arr);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**result;
@@ -56,7 +69,13 @@ char	**ft_split(char const *s, char c)
 		start = j;
 		while (s[j] && s[j] != c)
 			j++;
-		result[i++] = ft_substr(s, start, j - start);
+		result[i] = ft_substr(s, start, j - start);
+		if (!result[i])
+		{
+			free_all(result, i);
+			return (NULL);
+		}
+		i++;
 	}
 	result[i] = NULL;
 	return (result);

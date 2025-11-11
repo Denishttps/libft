@@ -6,7 +6,7 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 10:22:36 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/08 13:46:03 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/11 13:23:34 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*last;
+	const char	*last = NULL;
 
-	last = NULL;
 	while (*s)
 	{
 		if (*s == (char)c)
-			last = (char *)s;
+			last = s;
 		s++;
 	}
-	return (last);
+	if ((char)c == '\0')
+		return ((char *)s);
+	return ((char *)last);
 }

@@ -6,7 +6,7 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 15:00:04 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/11 12:34:41 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/11 12:51:30 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (n > 0)
 	{
 		if (*p == (unsigned char)c)
-			return (p);
+			return ((void *)p);
 		p++;
 		n--;
 	}
+	return (NULL);
 }
