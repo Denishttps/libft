@@ -6,15 +6,15 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:31:59 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/10 16:49:22 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/11 12:45:20 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *last;
+	t_list	*last;
 
 	if (!*lst || !new)
 		return ;

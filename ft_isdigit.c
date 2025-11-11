@@ -6,13 +6,13 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:26:45 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/10 13:32:06 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/11 12:45:37 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }

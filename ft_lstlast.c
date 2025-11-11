@@ -6,17 +6,17 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:25:01 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/10 16:48:07 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/11 12:44:43 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
-		return NULL;
+		return (NULL);
 	while (lst->next)
 		lst = lst->next;
-	return lst;
+	return (lst);
 }

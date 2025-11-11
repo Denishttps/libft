@@ -6,13 +6,13 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:12:43 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/10 13:31:55 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/11 12:45:30 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }

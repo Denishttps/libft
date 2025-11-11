@@ -6,13 +6,13 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:24:53 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/10 13:32:19 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/11 12:45:45 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c < 128);
 }
