@@ -35,3 +35,4 @@ int	ft_atoi(char *str)
 	}
 	return (num * sig);
 }
+
