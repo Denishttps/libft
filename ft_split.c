@@ -46,20 +46,12 @@ static void	free_all(char **arr, size_t n)
 	free(arr);
 }
 
-char	**ft_split(char const *s, char c)
+static char	**set_word(char **new_arr, const char *s, char c, size_t word_count)
 {
-	char	**result;
-	size_t	word_count;
 	size_t	i;
 	size_t	j;
 	size_t	start;
 
-	if (!s)
-		return (NULL);
-	word_count = count_words(s, c);
-	result = (char **)malloc((word_count + 1) * sizeof(char *));
-	if (!result)
-		return (NULL);
 	i = 0;
 	j = 0;
 	while (i < word_count)
@@ -69,14 +61,30 @@ char	**ft_split(char const *s, char c)
 		start = j;
 		while (s[j] && s[j] != c)
 			j++;
-		result[i] = ft_substr(s, start, j - start);
-		if (!result[i])
+		new_arr[i] = ft_substr(s, start, j - start);
+		if (!new_arr[i])
 		{
-			free_all(result, i);
+			free_all(new_arr, i);
 			return (NULL);
 		}
 		i++;
 	}
-	result[i] = NULL;
+	new_arr[i] = NULL;
+	return (new_arr);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**result;
+	size_t	word_count;
+
+	if (!s)
+		return (NULL);
+	word_count = count_words(s, c);
+	result = (char **)malloc((word_count + 1) * sizeof(char *));
+	if (!result)
+		return (NULL);
+	if (!set_word(result, s, c, word_count))
+		return (NULL);
 	return (result);
 }
