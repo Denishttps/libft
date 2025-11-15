@@ -1,4 +1,4 @@
-Libft
+# Libft
 
 Libft is a custom C library created as part of the 42 curriculum. The
 project focuses on reimplementing essential standard library functions,
@@ -14,7 +14,7 @@ memory management, string handling, and linked list operations.
 
 ------------------------------------------------------------------------
 
-📖 Description
+## 📖 Description
 
 The goal of this project is to recreate a selection of functions from
 <ctype.h>, <string.h>, <stdlib.h>, and other standard C libraries, as
@@ -25,7 +25,7 @@ handling, and clean code.
 
 ------------------------------------------------------------------------
 
-🛠 Build
+## 🛠 Build
 
 To compile the library:
 
@@ -47,7 +47,7 @@ Additional Makefile commands:
 
 ------------------------------------------------------------------------
 
-🚀 Usage
+## 🚀 Usage
 
 Include the header in your project:
 
@@ -59,9 +59,9 @@ Compile your program with the library:
 
 ------------------------------------------------------------------------
 
-📚 Implemented Functions
+## 📚 Implemented Functions
 
-🔤 Character checks (ctype)
+### 🔤 Character checks (ctype)
 
 -   ft_isalpha
 -   ft_isdigit
@@ -69,7 +69,7 @@ Compile your program with the library:
 -   ft_isascii
 -   ft_isprint
 
-🔧 String functions
+### 🔧 String functions
 
 -   ft_strlen
 -   ft_strlcpy
@@ -79,7 +79,7 @@ Compile your program with the library:
 -   ft_strnstr
 -   ft_strncmp
 
-🔁 Memory functions
+### 🔁 Memory functions
 
 -   ft_memset
 -   ft_memcpy
@@ -89,7 +89,7 @@ Compile your program with the library:
 -   ft_bzero
 -   ft_calloc
 
-🧵 String creation & manipulation
+### 🧵 String creation & manipulation
 
 -   ft_strdup
 -   ft_substr
@@ -100,14 +100,14 @@ Compile your program with the library:
 -   ft_strmapi
 -   ft_striteri
 
-📄 Output functions
+### 📄 Output functions
 
 -   ft_putchar_fd
 -   ft_putstr_fd
 -   ft_putendl_fd
 -   ft_putnbr_fd
 
-🧱 Linked list functions (bonus)
+### 🧱 Linked list functions (bonus)
 
 -   ft_lstnew
 -   ft_lstadd_front
@@ -121,18 +121,7 @@ Compile your program with the library:
 
 ------------------------------------------------------------------------
 
-🧪 Testing
-
-Recommended testers:
+## 🧪 Testing
 
 -   Francinette
 -   Moulitest
--   WarMachine
--   libft-unit-test
-curriculum
-and is freely distributable.
-
-
-------------------------------------------------------------------------
-
-
