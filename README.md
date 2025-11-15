@@ -7,12 +7,10 @@ memory management, string handling, and linked list operations.
 📌 Table of Contents
 
 -   Description
--   Project Structure
 -   Build
 -   Usage
 -   Implemented Functions
 -   Testing
--   License
 
 ------------------------------------------------------------------------
 
@@ -136,4 +134,5 @@ and is freely distributable.
 
 
 ------------------------------------------------------------------------
+
 
