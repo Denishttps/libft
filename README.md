@@ -27,17 +27,6 @@ handling, and clean code.
 
 ------------------------------------------------------------------------
 
-🗂 Project Structure
-
-    libft/
-    │── src/         # .c files
-    │── includes/    # libft.h
-    │── obj/         # object files (generated during build)
-    │── Makefile
-    │── README.md
-
-------------------------------------------------------------------------
-
 🛠 Build
 
 To compile the library:
@@ -147,3 +136,4 @@ and is freely distributable.
 
 
 ------------------------------------------------------------------------
+
