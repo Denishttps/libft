@@ -142,19 +142,8 @@ Recommended testers:
 -   Moulitest
 -   WarMachine
 -   libft-unit-test
-
-Example (Francinette):
-
-    git clone https://github.com/xicodomingues/francinette
-    cd francinette
-    ./francinette path/to/libft
-
-------------------------------------------------------------------------
-
-📄 License
-
-This project was created for educational purposes within the 42
 curriculum
 and is freely distributable.
+
 
 ------------------------------------------------------------------------
