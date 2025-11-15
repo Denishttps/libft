@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+** DESCRIPTION
+**    Applies the function f to each character of the string s to create a new
+**	  string resulting from successive applications of f.
+** PARAMETERS
+**    @s: The string to iterate over.
+**    @f: The function to apply to each character.
+** RETURN VALUES
+**    Returns the new string. Returns NULL if the allocation fails.
+*/
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*new_str;

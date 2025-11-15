@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+** DESCRIPTION
+**    Outputs the integer nb to the given file descriptor.
+** PARAMETERS
+**    @nb: The integer to output.
+**    @fd: The file descriptor on which to write the integer.
+** RETURN VALUES
+**    None.
+*/
+
 void	ft_putnbr_fd(int nb, int fd)
 {
 	char	c;

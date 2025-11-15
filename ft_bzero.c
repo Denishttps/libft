@@ -12,6 +12,14 @@
 
 #include <stddef.h>
 
+/** 
+** DESCRIPTION
+**    Sets the first n bytes of the memory area pointed to by s to zero.
+** PARAMETERS
+**    @s: Pointer to the memory area to be set to zero.
+**    @n: Number of bytes to set to zero.
+*/
+
 void	ft_bzero(void *s, size_t n)
 {
 	size_t			i;

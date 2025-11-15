@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/**
+** DESCRIPTION
+**    Appends the string src to the end of dst. It will append 
+**	  at most size - strlen(dst) - 1 characters.
+** PARAMETERS
+**    @dst: The destination string.
+**    @src: The source string to append.
+**    @size: The full size of the destination buffer.
+** RETURN VALUES
+**    Returns the total length of the string it tried to create.
+*/
+
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;

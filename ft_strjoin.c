@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+** DESCRIPTION
+**    Allocates and returns a new string which is the result of the concatenation
+**    of the two strings s1 and s2.
+** PARAMETERS
+**    @s1: The first string.
+**    @s2: The second string.
+** RETURN VALUES
+**    Returns the new string. Returns NULL if the allocation fails.
+*/
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*new_str;

@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+** DESCRIPTION
+**    Converts an integer to a null-terminated string.
+** PARAMETERS
+**    @n: The integer to convert.
+** RETURN VALUES
+**    Returns a pointer to the newly allocated string representing the integer.
+**    Returns NULL if memory allocation fails.
+*/
+
 static int	ft_nbrlen(int n)
 {
 	int	i;

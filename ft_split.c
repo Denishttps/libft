@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+** DESCRIPTION
+**    Splits the string s into an array of strings using the delimiter c.
+** PARAMETERS
+**    @s: The string to split.
+**    @c: The delimiter character.
+** RETURN VALUES
+**    Returns a NULL-terminated array of strings resulting from the split.
+**    Returns NULL if memory allocation fails.
+*/
+
 static size_t	count_words(const char *s, char c)
 {
 	size_t	count;

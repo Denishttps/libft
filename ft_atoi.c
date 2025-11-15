@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/** 
+** DESCRIPTION
+**    Converts the initial portion of the string pointed to by str to int.
+** PARAMETERS
+**    @str: The string to convert.
+**
+** RETURN VALUES
+**    Returns the converted integer value.
+*/
+
 int	ft_atoi(const char *str)
 {
 	int		sig;

@@ -6,11 +6,21 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 14:16:38 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/11 12:44:11 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/15 17:11:30 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+** DESCRIPTION
+**    Creates a new node with the given content.
+** PARAMETERS
+**    @content: The content to store in the new node.
+** RETURN VALUES
+**    Returns a pointer to the newly created node. Returns NULL if memory
+**    allocation fails.
+*/
 
 t_list	*ft_lstnew(void *content)
 {

@@ -6,11 +6,20 @@
 /*   By: dbobrov <dbobrov@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:22:00 by dbobrov           #+#    #+#             */
-/*   Updated: 2025/11/11 12:43:55 by dbobrov          ###   ########.fr       */
+/*   Updated: 2025/11/15 17:11:41 by dbobrov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+** DESCRIPTION
+**    Counts the number of nodes in the list.
+** PARAMETERS
+**    @lst: Pointer to the first node of the list.
+** RETURN VALUES
+**    Returns the number of nodes in the list.
+*/
 
 int	ft_lstsize(t_list *lst)
 {

@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/**
+** DESCRIPTION
+**    Trims characters from the beginning and end of
+**    a string based on a set of characters.
+** PARAMETERS
+**    @s1: The string to be trimmed.
+**    @set: The set of characters to trim from the string.
+** RETURN VALUES
+**    Returns a new string with the characters from set removed
+**    from the beginning and end of s1. Returns NULL if allocation fails.
+*/
+
 static int	is_in_set(char c, const char *set)
 {
 	while (*set)
