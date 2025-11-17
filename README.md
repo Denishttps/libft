@@ -44,6 +44,7 @@ Additional Makefile commands:
   | make fclean | Remove object files and libft.a   |
   | make re     | Rebuild everything                |
   | make bonus  | Build linked list bonus functions |
+  | make norm   | Norminette test                   |
 
 ------------------------------------------------------------------------
 
