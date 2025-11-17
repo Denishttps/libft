@@ -6,11 +6,11 @@ memory management, string handling, and linked list operations.
 
 📌 Table of Contents
 
--   Description
--   Build
--   Usage
--   Implemented Functions
--   Testing
+-   [Description](#-description)
+-   [Build](#-build)
+-   [Usage](#-usage)
+-   [Implemented Functions](#-implemented-functions)
+-   [Testing](#-testing)
 
 ------------------------------------------------------------------------
 
