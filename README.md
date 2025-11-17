@@ -37,13 +37,13 @@ This produces:
 
 Additional Makefile commands:
 
-  Command       Description
-  ------------- -----------------------------------
-  make          Build the library
-  make clean    Remove object files
-  make fclean   Remove object files and libft.a
-  make re       Rebuild everything
-  make bonus    Build linked list bonus functions
+  | Command     | Description                       |
+  |-------------| ----------------------------------|
+  | make        | Build the library                 |
+  | make clean  | Remove object files               |
+  | make fclean | Remove object files and libft.a   |
+  | make re     | Rebuild everything                |
+  | make bonus  | Build linked list bonus functions |
 
 ------------------------------------------------------------------------
 
